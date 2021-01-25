@@ -27,29 +27,18 @@ form_updateProfile.addEventListener("submit", (event) => {
       Accept: "application/json",
     },
     body: JSON.stringify(user),
-  })
-    .then((response) => {
-      if (response.status === 200) {
-        alert("Update Success ✅");
-        localStorage.setItem("userName", JSON.stringify(user.name));
-        containerWelcome = "";
-        container2 = "";
-        loadData();
-        window.location = "./profile.html";
-        document.getElementById("form-edit").reset();
-      } else if (response.status === 204) {
-        containerWelcome = "";
-        container2 = "";
-        loadData();
-        document.getElementById("form-edit").reset();
-      }
-    })
-    .catch((e) => {
+  }).then((response) => {
+    if (response.status === 200) {
+      alert("Update Success ✅");
+      localStorage.setItem("userName", JSON.stringify(user.name));
       containerWelcome = "";
       container2 = "";
       loadData();
+      window.location = "./profile.html";
       document.getElementById("form-edit").reset();
-    });
+    } else if (response.status === 204) {
+    }
+  });
 });
 
 function loadData() {
