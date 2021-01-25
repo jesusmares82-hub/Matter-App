@@ -19,6 +19,7 @@ form_updateProfile.addEventListener("submit", (event) => {
   const password = document.getElementById("password").value;
   const user = { name, password };
   user.name = name;
+  user.password = password;
   fetch(`https://matter-app.herokuapp.com/api/v1/users/${userId}`, {
     method: "PUT",
     headers: {
@@ -37,11 +38,12 @@ form_updateProfile.addEventListener("submit", (event) => {
         window.location = "./profile.html";
         document.getElementById("form-edit").reset();
       } else if (response.status === 204) {
+        document.getElementById("form-edit").reset();
       }
     })
     .catch((e) => {
       document.getElementById("form-edit").reset();
-      alert("Somethings Wrong FF❌");
+      alert("Somethings Wrong ${e} ❌");
     });
 });
 
