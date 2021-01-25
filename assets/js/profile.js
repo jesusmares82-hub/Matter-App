@@ -43,7 +43,6 @@ form_updateProfile.addEventListener("submit", (event) => {
     })
     .catch((e) => {
       document.getElementById("form-edit").reset();
-      alert("Somethings Wrong ${e} ❌");
     });
 });
 
