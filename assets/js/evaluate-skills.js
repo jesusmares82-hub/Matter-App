@@ -27,7 +27,6 @@ function printInvitations(containerId, invitations, skills) {
     fetch(`https://matter-app.herokuapp.com/api/v1/users/${invitation.user_id}`)
       .then((response) => response.json())
       .then((users) => {
-        console.log(users);
         container.innerHTML += `<div class="card card-matter mt-3">
                                         <div class="card-body  text-center">
                                             <form id="form-feedback${
