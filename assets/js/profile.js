@@ -38,10 +38,16 @@ form_updateProfile.addEventListener("submit", (event) => {
         window.location = "./profile.html";
         document.getElementById("form-edit").reset();
       } else if (response.status === 204) {
+        containerWelcome = "";
+        container2 = "";
+        loadData();
         document.getElementById("form-edit").reset();
       }
     })
     .catch((e) => {
+      containerWelcome = "";
+      container2 = "";
+      loadData();
       document.getElementById("form-edit").reset();
     });
 });
