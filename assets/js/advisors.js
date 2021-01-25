@@ -49,7 +49,7 @@ function loadData2() {
       data.forEach((element) => {
         container.innerHTML += `<li class="list-group-item"> <a href="#" style="text-decoration:none"> <span class="fs-1">📧</span> <span class="text-primary ml-1 color-feedback"> ${
           element.user_invited.email
-        }</span> <span class="text-primary ml-2"> Requested: ${element.user_invited.updated_at.substr(
+        }</span> <span class="text-primary ml-2"> Requested: ${element.updated_at.substr(
           0,
           10
         )}</span> </a> </li>`;
