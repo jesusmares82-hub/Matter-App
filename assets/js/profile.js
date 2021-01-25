@@ -14,7 +14,8 @@ const form_updateProfile = document.querySelector("#form-edit");
 
 form_updateProfile.addEventListener("submit", (event) => {
   event.preventDefault();
-
+  containerWelcome = "";
+  container2 = "";
   const name = document.getElementById("name").value;
   const password = document.getElementById("password").value;
   const user = { name, password };
@@ -31,8 +32,6 @@ form_updateProfile.addEventListener("submit", (event) => {
     if (response.status === 200) {
       alert("Update Success ✅");
       localStorage.setItem("userName", JSON.stringify(user.name));
-      containerWelcome = "";
-      container2 = "";
       loadData();
       window.location = "./profile.html";
       document.getElementById("form-edit").reset();
