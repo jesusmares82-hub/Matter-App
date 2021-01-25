@@ -9,17 +9,6 @@ let containerWelcome = document.getElementById("welcome");
 let container2 = document.getElementById("profile-card2");
 
 let flag = JSON.parse(localStorage.getItem("flag"));
-console.log(userId);
-
-//function Authenticated() {
-//  if (userAuthenticated) {
-//    loadData();
-//    localStorage.setItem("flag", JSON.stringify(false));
-//  } else {
-//    alert("No has iniciado sesión, por favor inicia sesión. 🚫");
-//    window.location = "./index.html";
-//  }
-//}
 
 const form_updateProfile = document.querySelector("#form-edit");
 
@@ -52,7 +41,7 @@ form_updateProfile.addEventListener("submit", (event) => {
     })
     .catch((e) => {
       document.getElementById("form-edit").reset();
-      alert("Somethings Wrong ❌");
+      alert("Somethings Wrong FF❌");
     });
 });
 
@@ -76,4 +65,3 @@ function cleanStorage() {
 }
 
 loadData();
-//Authenticated();
