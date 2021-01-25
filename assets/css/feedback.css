@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.color-feedback {
+  color: darkred;
+}
+
+.wallpaper-bg {
+  background-image: url("../IMG/Skills_page.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}

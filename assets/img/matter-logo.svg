@@ -1,0 +1,22 @@
+<svg width="128" height="128" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Logo &#226;&#128;&#148; Color</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(1011 -1056)">
+<g id="Logo &#226;&#128;&#148; Color">
+<g id="Right">
+<use xlink:href="#path0_fill" transform="matrix(1 -3.46945e-18 3.46945e-18 1 -1011 1056)" fill="url(#paint0_linear)"/>
+</g>
+<g id="Left">
+<use xlink:href="#path1_fill" transform="matrix(1 -3.46945e-18 3.46945e-18 1 -1011 1056)" fill="#FFBF61"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-128 128 -128 -128 192 64)">
+<stop offset="0" stop-color="#FF8D6A"/>
+<stop offset="1" stop-color="#FF4379"/>
+</linearGradient>
+<path id="path0_fill" d="M 128 0L 128 128L 0 128L 128 0Z"/>
+<path id="path1_fill" d="M 0 0L 128 128L 0 128L 0 0Z"/>
+</defs>
+</svg>
