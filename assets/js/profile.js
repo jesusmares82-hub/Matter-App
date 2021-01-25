@@ -32,7 +32,6 @@ form_updateProfile.addEventListener("submit", (event) => {
     if (response.status === 200) {
       alert("Update Success ✅");
       localStorage.setItem("userName", JSON.stringify(user.name));
-      loadData();
       window.location = "./profile.html";
       document.getElementById("form-edit").reset();
     } else if (response.status === 204) {
