@@ -16,7 +16,8 @@ export default class Auth {
         localStorage.setItem("userEmail", JSON.stringify(result.email));
         localStorage.setItem("flag", JSON.stringify(true));
         localStorage.setItem("flag2", JSON.stringify(true));
-      });
+      })
+      .catch((error) => {});
   }
   static handleLoginResponse(statusCode) {
     if (statusCode === 200) {
@@ -27,15 +28,12 @@ export default class Auth {
     } else if (statusCode === 401) {
       alert("Sorry! This credentials are wrong ❌. Try again ‼️");
       document.getElementById("login-form").reset();
-    } else {
-      alert("Sorry! An error occurred ❌");
     }
   }
   static async register(user) {
     const response = await Request.register(user);
     if (response.status === 201) {
       alert("Register Success ✅");
-      //localStorage.setItem("authenticated", "true");
       document.getElementById("register-form").reset();
       window.location.href = this.succesRegisterRedirect;
     } else if (response.status === 422) {

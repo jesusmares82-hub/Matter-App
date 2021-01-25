@@ -107,6 +107,7 @@ function sendFeedback(invitationId) {
     alert("We had an error sending feedback");
   }
 }
+
 window.sendFeedback = sendFeedback;
 
 printReceivedInvitations();

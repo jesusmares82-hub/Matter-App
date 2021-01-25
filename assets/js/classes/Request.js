@@ -1,4 +1,5 @@
 import Auth from "./Auth.js";
+
 const BASE_URL = "https://matter-app.herokuapp.com/api/v1";
 export default class Request {
   static login(user) {
